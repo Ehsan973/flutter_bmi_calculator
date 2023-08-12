@@ -14,7 +14,6 @@ class LeftShape extends StatelessWidget {
         Container(
           height: 40,
           width: this.width,
-          child: Text('Ehsan Salehi'),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20),
@@ -22,6 +21,13 @@ class LeftShape extends StatelessWidget {
             color: Colors.green,
           ),
         ),
+        SizedBox(
+          width: 10,
+        ),
+        Text(
+          'شاخص مثبت',
+          style: TextStyle(color: Colors.green),
+        )
       ],
     );
   }

@@ -1,5 +1,9 @@
+import 'package:bmi_calculator_app/constants/constants.dart';
+import 'package:bmi_calculator_app/screens/home_screen.dart';
+import 'package:bmi_calculator_app/screens/test_screen.dart';
 import 'package:bmi_calculator_app/widgets/background_shape_left.dart';
 import 'package:bmi_calculator_app/widgets/background_shape_right.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,20 +18,7 @@ class Application extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Dana'),
-      home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            children: [
-              RightShape(width: 300),
-              RightShape(width: 200),
-              RightShape(width: 100),
-              LeftShape(
-                width: 300,
-              ),
-            ],
-          ),
-        ),
-      ),
+      home: HomeScreen(),
     );
   }
 }
